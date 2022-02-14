@@ -8,7 +8,7 @@ public class Vendedor implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private Integer id;
-	private String noome;
+	private String nome;
 	private String email;
 	private Date birthData;
 	private Double salario;
@@ -17,9 +17,9 @@ public class Vendedor implements Serializable {
 	public Vendedor() {
 	}
 
-	public Vendedor(Integer id, String noome, String email, Date birthData, Double salario, Departamento departamento) {
+	public Vendedor(Integer id, String nome, String email, Date birthData, Double salario, Departamento departamento) {
 		this.id = id;
-		this.noome = noome;
+		this.nome = nome;
 		this.email = email;
 		this.birthData = birthData;
 		this.salario = salario;
@@ -35,12 +35,12 @@ public class Vendedor implements Serializable {
 		this.id = id;
 	}
 
-	public String getNoome() {
-		return noome;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setNoome(String noome) {
-		this.noome = noome;
+	public void setNoome(String nome) {
+		this.nome = nome;
 	}
 
 	public String getEmail() {
@@ -102,7 +102,7 @@ public class Vendedor implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Vendedor [id=" + id + ", noome=" + noome + ", email=" + email + ", birthData=" + birthData
+		return "Vendedor [id=" + id + ", nome=" + nome + ", email=" + email + ", birthData=" + birthData
 				+ ", salario=" + salario + ", departamento=" + departamento + "]";
 	}	
 }
