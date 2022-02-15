@@ -14,6 +14,7 @@ public class Programa {
         System.out.println("=== teste 1 : vendedor findbyID  =====");
         Vendedor vendedor =  vendedorDao.findById(3);
         System.out.println(vendedor);
+        
 	}
 
 }
